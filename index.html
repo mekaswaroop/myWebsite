@@ -63,6 +63,22 @@ min-height: :300px;
 
 
 }
+.logos
+{
+	float: right; 
+
+}
+input[type="text"]
+{
+	padding: 5px;
+	width: 250px;
+	font:1em;
+}
+select
+{
+	padding: 5px;
+	width: 250px;
+}
 </style>
 </head>
 <body>
@@ -93,9 +109,31 @@ and i m a good learner.i have learnt c,c++,java,html etc.
 <span class="heading">Contact ME</span>
 <p>email Id: jyothiswaroop055@gmail.com <br/>phone no:9966544111</p>
 </div>
-<h1>
+<form action="" method="post">
+<input type="text" name="name" id="name" value="plase enter your name"/><br/>
+<textarea name="message" id="message" rows="10" cols="50">please type me a message here</textarea><br/>
+</form>
+
+<div class="logos">
 <a href="https://www.facebook.com/jyooo.007"><img class="myProfilePic" src="images/fb.png"/></a>
 <a href="https://www.twitter.com/jyothiswaroop05"><img class="myProfilePic" src="images/twitter.png"/></a>
-</h1>
+</div>
+<h2>you are</h2>
+<select id="ddAbout" name="ddAbout">
+<option>choose your option</option>
+<option>student</option>
+<option>professional</option>
+<option>something</option>
+</select>
+<h2>are you</h2>
+<input type="radio" name="gender" id="male" checked/>male
+<input type="radio" name="gender" id="female"/>female
+<input type="radio" name="gender" id="others"/>other<br/>
+<h2>Your Intrest in</h2>
+<input type="checkbox" id="web_design">Web Design<br/>
+<input type="checkbox" id="web_development">Web Development<br/>
+<input type="checkbox" id="mobile">Mobile<br/>
+<br/>
+<input type="submit" name="submit">
 </body>
 </html>
