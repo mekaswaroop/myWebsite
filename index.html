@@ -3,85 +3,86 @@
 <title>
 SWAROOP
 </title>
-<style type="text/css">
-html,body
+<link href="style/style.css" rel='stylesheet' type="text/css">
+<script type="js/jquery.js"></script>
+<script type="text/javascript">
+var personObject ={
+	firstname : "john",
+	lastname : "smith"
+};
+console.log(personObject.firstname);
+personObject.age="19";
+console.log(personObject.age);
+var car ={
+	color : "black",
+	regno:"3101757115067",
+	company : "nissan",
+	model : "GTR"
+};
+console.log(car);
+console.log(car.color);
+console.log(car.regno);
+console.log(car.company);
+console.log(car.model);
+function person(name1,age1,gender1)
 {
- font-family:arial;
- padding: 0;
- margin: 0;
+	this.name= name1;
+	this.age=age1;
+	this.gender=gender1;
+	this.personDetails= function()
+	{
+		return this.name+" is "+this.age+" years old";
+	}
+	this.getgender= function()
+	{
+		return this.name+" is "+this.gender;
+	}
 }
-.myProfilePic
-{
- -webkit-border-radius:999px;
- -moz-border-radius:999px;
- border-radius:999px;
- height: 200px;
- width: auto;
-}
-.myclass
-{
-  margin-left: 25%;
- 	float:left;
- 	clear: both;
-}
-.aboutMe
-{
- 	float:left;
- 	width: 100%;
- 	padding-top:5px;
- 
-}
-.myName
-{
-	font-size: 2.5em;
-	padding: 5px;
-	width: 200px;
-	float: left;
+var p1=new person("swaroop",20,"male");
+console.log(p1.personDetails());
+console.log(p1.getgender());
+console.log("-----------------");
+var p2=new person("jyothi",20,"female");
+var p3=new person("abi",19,"male");
+console.log(p2.personDetails());
+console.log(p2.getgender());
+console.log("-----------------");
+console.log(p3.personDetails());
+console.log(p3.getgender());
+console.log("-----------------");
 
 
-}
 
-.headerdiv
+function company(name2,noofEmp1,avgSalary1,location1)
 {
-	 font-size:2em; 
- font-family:arial;
- border-bottom: 1px solid #e1dad3;
-min-height: :300px;
-	float: left;
-	width: 100%;
+	this.name=name2;
+	this.noofEmp=noofEmp1;
+    this.avgSalary=avgSalary1;
+    this.location=location1;
+    this.grtcompanydetails= function()
+    {
+    	return this.name+"---"+this.noofEmp+"---"+this.avgSalary;
+    }
+    this.getlocation= function()
+    {
+    	return "Company name is "+this.name+" located at "+this.location;
+    }
 }
-.heading
-{
-	font-size: 1.5em;
-	text-decoration: underline;
-}
-.styling
-{
-	font-size: 1.5em;
-	margin-top: 10px;
-	background-color: rgba(101, 153, 255, 1);
+var c1=new company("wipro",20000,15000,"bangalore");
+var c2=new company("cisco",15000,20000,"hydrabad");
+var c3=new company("microsoft",100000,50000,"delhi");
+console.log(c1.grtcompanydetails());
+console.log(c1.getlocation());
+console.log("--------------------");
+console.log(c2.grtcompanydetails());
+console.log(c2.getlocation());
+console.log("---------------------");
+console.log(c3.grtcompanydetails());
+console.log(c3.getlocation());
+</script>
 
-
-}
-.logos
-{
-	float: right; 
-
-}
-input[type="text"],input[type="submit"],select
-{
-	padding: 5px;
-	width: 250px;
-	font:1em;
-}
-
-textarea
-{
-	padding: 5px;
-	width: 250px;
-}
-</style>
 </head>
+
 <body>
 
 	<div class="headerdiv">
