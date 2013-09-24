@@ -4,81 +4,9 @@
 SWAROOP
 </title>
 <link href="style/style.css" rel='stylesheet' type="text/css">
-<script type="js/jquery.js"></script>
-<script type="text/javascript">
-var personObject ={
-	firstname : "john",
-	lastname : "smith"
-};
-console.log(personObject.firstname);
-personObject.age="19";
-console.log(personObject.age);
-var car ={
-	color : "black",
-	regno:"3101757115067",
-	company : "nissan",
-	model : "GTR"
-};
-console.log(car);
-console.log(car.color);
-console.log(car.regno);
-console.log(car.company);
-console.log(car.model);
-function person(name1,age1,gender1)
-{
-	this.name= name1;
-	this.age=age1;
-	this.gender=gender1;
-	this.personDetails= function()
-	{
-		return this.name+" is "+this.age+" years old";
-	}
-	this.getgender= function()
-	{
-		return this.name+" is "+this.gender;
-	}
-}
-var p1=new person("swaroop",20,"male");
-console.log(p1.personDetails());
-console.log(p1.getgender());
-console.log("-----------------");
-var p2=new person("jyothi",20,"female");
-var p3=new person("abi",19,"male");
-console.log(p2.personDetails());
-console.log(p2.getgender());
-console.log("-----------------");
-console.log(p3.personDetails());
-console.log(p3.getgender());
-console.log("-----------------");
-
-
-
-function company(name2,noofEmp1,avgSalary1,location1)
-{
-	this.name=name2;
-	this.noofEmp=noofEmp1;
-    this.avgSalary=avgSalary1;
-    this.location=location1;
-    this.grtcompanydetails= function()
-    {
-    	return this.name+"---"+this.noofEmp+"---"+this.avgSalary;
-    }
-    this.getlocation= function()
-    {
-    	return "Company name is "+this.name+" located at "+this.location;
-    }
-}
-var c1=new company("wipro",20000,15000,"bangalore");
-var c2=new company("cisco",15000,20000,"hydrabad");
-var c3=new company("microsoft",100000,50000,"delhi");
-console.log(c1.grtcompanydetails());
-console.log(c1.getlocation());
-console.log("--------------------");
-console.log(c2.grtcompanydetails());
-console.log(c2.getlocation());
-console.log("---------------------");
-console.log(c3.grtcompanydetails());
-console.log(c3.getlocation());
+<script src="js/jquery.js"></script>
+<script src="js/general.js"></script>
+<script>
 </script>
 
 </head>
@@ -92,34 +20,32 @@ console.log(c3.getlocation());
 	<div class="myName">Jyothi Swaroop</div>
 
 </div>
-<div class="aboutMe styling"> 
-	<span class="heading">About Me</span>
+<div class="aboutMe styling" id="aboutme">[+]
+	<span class="heading">About Me</span></div>
+	<div class="Des" id="aboutmeDes">
 	<p>
 		I'm M Jothi Swaroop .i m a student doing my graduation in S.R.K.R ENG
 COLLEGE,BHIMAVARAM.<br />i m a executive body member of CSI(Computer science of India).<br/>i m good in communication skills
 and i m a good learner.i have learnt c,c++,java,html etc.
 </p>
-
 </div>
 
-<div class="aboutMe styling">
-<span class="heading">portfolio</span>
+<div class="aboutMe styling" id="portfolioMe">[+]
+    <span class="heading">portfolio</span></div>
+<div class="Des" id="protfolioDes">
 <p>my portfoliouter science engineering
 </p>
 </div>
-<div class="aboutMe styling">
-<span class="heading">Contact ME</span>
+
+<div class="aboutMe styling" id="contactMe">[+]
+<span class="heading">Contact ME</span></div>
+<div class="Des" id="contactDes">
 <p>email Id: jyothiswaroop055@gmail.com <br/>phone no:9966544111</p>
-</div>
 <form action="" method="post">
 <input type="text" name="name" id="name" value="plase enter your name"/><br/>
 <textarea name="message" id="message" rows="10" cols="50">please type me a message here</textarea><br/>
 </form>
 
-<div class="logos">
-<a href="https://www.facebook.com/jyooo.007"><img class="myProfilePic" src="images/fb.png"/></a>
-<a href="https://www.twitter.com/jyothiswaroop05"><img class="myProfilePic" src="images/twitter.png"/></a>
-</div>
 <h2>you are</h2>
 <select id="ddAbout" name="ddAbout">
 <option>choose your option</option>
@@ -136,6 +62,23 @@ and i m a good learner.i have learnt c,c++,java,html etc.
 <input type="checkbox" id="web_development">Web Development<br/>
 <input type="checkbox" id="mobile">Mobile<br/>
 <br/>
+<input type="button" value="sentmail" id="sentmail"/><br/>
 <input type="submit" name="submit">
+<input type="button" value="show" id="show">
+<input type="button" value="hide" id="hide">
+<input type="button" value="background" id="background">
+</div>
+
+<p style="text-align:center;">
+
+<a href="https://www.facebook.com/jyooo.007"><img class="logo" src="images/f.png"/></a>
+<a href="https://www.twitter.com/jyothiswaroop05"><img class="logo" src="images/t.png"/></a>
+<a href="https://github.com/mekaswaroop"><img class="logo" src="images/g.png"/></a>
+<a href="http://www.skype.com/en/"><img class="logo" src="images/s.png"/></a>
+
+</p>
+
+
+
 </body>
 </html>
