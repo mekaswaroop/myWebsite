@@ -1,0 +1,87 @@
+html,body
+{
+	padding: 0;
+	margin:0;
+	font-family: arial;
+	background-image: url("../images/brickwall.png");
+}
+.heading
+{
+	background-color: black;
+	padding: 5px;
+	width: 100%;
+	color: white;
+	font-size: 30px;
+}
+.load
+{
+  width:60%;
+  -moz-border-radius:15px;
+  -border-radius:15px;
+  -webkit-border-radius:15px;
+  background:#e1dad3;
+  margin-left:15%;
+  margin-top:2%;
+  padding:10px;
+}
+.weatherData
+{
+  background:#f9edbe;
+  padding:5px;
+  margin-top:5px;
+}
+#lication
+{
+	color:#4d90fe;
+   font-weight: bold;
+   font-size:1.5em;
+}
+.enter
+{
+	margin-left:5px;
+	margin-top:10px;
+	border:solid 5px black;
+	width:50%;
+	padding:10px;
+	background-color:#C0C0C0;
+}
+.hellomsg
+{
+  font-size:1.4em;
+  color:#dd4b39;
+  font-family: 'Satisfy', cursive;
+}
+#statusMsg
+{
+  width:60%;
+  background:rgba(61, 148, 0, 0.6);
+  color:white;
+  margin-left:15%;
+  padding:10px;
+  font-family: 'Satisfy', cursive;
+  display:none;
+  font-size:1.2em;
+}
+
+
+.mapholder
+{
+  padding:15px;  
+  margin-top:2%;
+  margin-left:15%;
+   width:60%;
+  -moz-border-radius:15px;
+  -border-radius:15px;
+  -webkit-border-radius:15px;
+  background:white;
+  
+}
+#map-canvas {
+    height:200px;
+    position:"absolute";
+    top: 0px;
+    left: 0px;
+    overflow:"hidden";
+    width:100%;
+  
+}

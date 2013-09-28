@@ -1,0 +1,51 @@
+html,body{
+ font-family:arial;
+ padding: 0;
+ margin: 0;
+ background-image: url("../images/brickwall.png");
+}
+.PImage{
+	
+}
+.hai
+{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	font-family: arail;
+	font-size: 50px;
+	background-color: #74A6BD;
+	border: solid 2px black;
+}
+.singleItem
+{	
+	padding:8px;
+	border-bottom:solid 2px black;
+}
+#swap
+{
+	 padding:15px;  
+  margin-top:2%;
+  margin-left:15%;
+   width:60%;
+  -moz-border-radius:15px;
+  -border-radius:15px;
+  -webkit-border-radius:15px;
+  background:white;
+  height: auto;
+}
+#posterHere
+{
+	width: 50%;
+	height: 50%;
+}
+#mveName
+{
+	height: 5%;
+	width: 50%;
+}
+#findPoster
+{
+	height: 5%;
+	width: 20%
+}

@@ -1,0 +1,49 @@
+var Arr=[1,2,3,4,"x","y"];
+for(i=0;i<Arr.length;i++)
+{
+	console.log(Arr[i]);
+	console.log("The member of m Arrays at Index "+i+" is "+Arr[i]);
+}
+console.log("------------------");
+var Arra=[1,2,3,4,5,"a","b"];
+console.log(Arra.length);
+Arra.push("swaroop");
+Arra.push("abhi");
+console.log(Arra.length);
+console.log("push "+Arra);
+console.log("-----------------------");
+Arra.pop();
+Arra.pop();
+console.log(Arra.length);
+console.log("pop "+Arra);
+console.log("----------------");
+Arra.splice(2,3);
+console.log(Arra.length);
+console.log("splice "+" "+Arra);
+console.log("-----------------------");
+function printArray(arre)
+{
+	for(i=0;i<arre.length;i++)
+	{
+		console.log("the member of m Arrays at Index "+i+" is "+arre[i]);
+	}
+}
+printArray([1,2,3,"swaroop","frds"]);
+var i=9;
+while(i>0)
+{
+	console.log("there are "+i+" bottles in ferize");
+	if(i==3)
+	{
+		break;
+	}
+	i=i-1;
+}
+for(i=0;i<100;i++)
+{
+	if(i%2==0)
+	{
+		continue;
+	}
+console.log("odd no is"+i);
+}

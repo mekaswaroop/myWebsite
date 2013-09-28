@@ -1,0 +1,92 @@
+html,body{
+ font-family:arial;
+ padding: 0;
+ margin: 0;
+ background-image: url("../images/brickwall.png");
+}
+.myProfilePic
+{
+ -webkit-border-radius:999px;
+ -moz-border-radius:999px;
+ border-radius:999px;
+ height: 200px;
+ width: auto;
+}
+.myclass
+{
+  margin-left: 25%;
+ 	float:left;
+ 	clear: both;
+}
+.aboutMe
+{
+ 	float:left;
+ 	width: 100%;
+ 	padding-top:5px;
+ 	border: solid 2px #ffffff;
+ 
+}
+.myName
+{
+	font-size: 2.5em;
+	padding: 5px;
+	width: 200px;
+	float: left;
+
+
+}
+
+.headerdiv
+{
+	 font-size:2em; 
+ font-family:arial;
+ border-bottom: 1px solid #e1dad3;
+min-height: :300px;
+	float: left;
+	width: 100%;
+	background-color: #F8F8F8 ;
+	border: solid 2px 333333;
+}
+.heading
+{
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+.styling
+{
+	font-size: 1em;
+	margin-top: 2px;
+	background-color: rgba(101, 153, 255, 1);
+
+
+}
+.logo
+{
+	width: 50px;
+	height: 50px;
+}
+.Des
+{
+   float:left;
+ 	width: 100%;
+ 	padding-top:5px;
+ 	font-size: 1.5em;
+	margin-top: 10px;
+	background-color: rgba(101, 153, 255, 1);
+	display:none;
+	border: solid 2px 333333;
+
+}
+
+input[type="text"],input[type="submit"],select
+{
+	padding: 5px;
+	width: 250px;
+	font:1em;
+}
+
+textarea
+{
+	padding: 5px;
+	width: 250px;
+}

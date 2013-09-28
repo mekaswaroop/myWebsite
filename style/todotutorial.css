@@ -1,0 +1,59 @@
+html,body
+{
+	padding:0;
+	margin:0;
+	font-family:arial;
+	
+}
+.headLine
+{
+	padding: 3px;
+	width: 100%;
+	height:10%;
+	background-color: blue;
+	font-size: 70px;
+	font-family: arail;
+}
+.myDetail
+{
+	padding: 5px;
+	height: 50%;
+	width: 25%;
+	background-color: #C0C0C0;
+	font-family: arail;
+	border: solid 1px black;
+	float: right; 
+	font-size: 20px;
+}
+.interdection
+{
+	padding: 5px;
+	height: 50%;
+	width: 70%;
+	font-family: arail;
+	float: left;
+	border: solid 1px black; 
+	font-size: 20px;
+}
+.htmlClass
+{
+	padding: 5px;
+	width: 100%;
+	font-family: arail;
+	float: left; 
+	font-size: 70px;
+	text-decoration: underline;
+	background-color: #74A6BD;
+	border: solid 2px black;
+
+}
+.htmlpage
+{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	font-family: arail;
+	float: left;
+	font-size: 20px;
+
+}

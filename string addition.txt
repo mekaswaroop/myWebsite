@@ -1,0 +1,12 @@
+var str = $("#protfolioDes").text()+" "+$("#message").val()+" "+$("#name").val()+" "+$("#ddAbout").val()+" "+$("#male").val()+" "+$("#female").val() + "  " + $("#others").val()+" " + $("#web_design").val() + " " + $("#web_development").val()+" "+$("#mobile").val()+" "+$("#sendmail").val()+" "+
+	$("#show").val()+" "+$("#show").val()+" "+$("#hide").val()+" "+$("background").val();
+	$("#clickMe").click(function(){
+        alert(str);
+	});
+	$("#change").click(function(){
+         $("#protfolioDes").text("hai my portfolio is information technology final year");
+	});
+	$("#protfolioDes").append(" my name is JyothiSwaroop");
+	$("#protfolioDes").prepend("this is my block");
+	alert($("#ddAbout").attr("name"));
+	
