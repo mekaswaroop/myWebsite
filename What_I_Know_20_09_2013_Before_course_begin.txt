@@ -1,0 +1,4 @@
+C 
+c++ basic
+java basic 
+dbms quries 
